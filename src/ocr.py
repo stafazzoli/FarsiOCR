@@ -46,7 +46,7 @@ def main():
                 print(text, file=text_file)
 
             # Evaluate the result based on Levenshtein distance
-            evaluate_result(text)
+            # evaluate_result(text)
 
 
 def evaluate_result(text):
