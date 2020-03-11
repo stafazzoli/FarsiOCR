@@ -11,7 +11,6 @@ WORKDIR /app
 
 # Bundle app source
 COPY src ./src
-COPY data ./data
 
 # Install app dependencies
 COPY requirements.txt ./requirements.txt

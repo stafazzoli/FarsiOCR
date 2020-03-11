@@ -21,10 +21,10 @@ pip3 install requirements.txt
 ```
 ## Installation via Docker
 ```docker
-docker build docker build -t <image_name> .
-docker run -—name <container_name> -it <image_name>
+docker build -t farsiocr .
+docker run --name ocr -it --rm -v $PWD/data:/app/data -v $PWD/output:/app/output farsiocr
 ```
 ## How to use?
-Copy your pdf or image files into the `Data` directory (a sample image in the Data directory is downloaded from the internet). 
+Copy your pdf or image files into the `data` directory (a sample image in the Data directory is downloaded from the internet). 
 
-Run the `src/ocr.py` and the results will be created in the `Output` directory.
+Run the `src/ocr.py` and the results will be created in the `output` directory.
