@@ -12,15 +12,15 @@ You can either install [Tesseract](https://github.com/tesseract-ocr/tesseract/wi
 2. Install farsi language data for tesseract
 
 [Download](https://github.com/tesseract-ocr/tessdata) language training data (fas.traineddata) and move the file to the following directory:
-```linux
+```shell script
 mv fas.traineddata /usr/local/share/tessdata
 ```
 3. Install dependencies via `requirements.txt`
-```cmd
-pip3 install requirements.txt
+```shell script
+pip install -r requirements.txt
 ```
 ## Installation via Docker
-```docker
+```shell script
 docker build -t farsiocr .
 docker run --name ocr -it --rm -v $PWD/data:/app/data -v $PWD/output:/app/output farsiocr
 ```
