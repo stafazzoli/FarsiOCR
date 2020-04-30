@@ -4,7 +4,7 @@ import re
 import pytesseract
 from pdf2image import convert_from_path
 
-from .preprocess import process_image
+from preprocess import process_image
 
 langs = "fas"  # Languages for OCR eng+fas
 dirname = os.path.dirname(os.path.dirname(__file__))
