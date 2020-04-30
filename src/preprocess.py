@@ -1,8 +1,9 @@
 import os
-import cv2
-import pytesseract
 import re
+
+import cv2
 import numpy as np
+import pytesseract
 from PIL import Image
 
 

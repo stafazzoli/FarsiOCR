@@ -1,9 +1,10 @@
 import os
-import pytesseract
-from PIL import Image
-from preprocess import process_image
-from pdf2image import convert_from_path
 import re
+
+import pytesseract
+from pdf2image import convert_from_path
+
+from .preprocess import process_image
 
 langs = "fas"  # Languages for OCR eng+fas
 dirname = os.path.dirname(os.path.dirname(__file__))
