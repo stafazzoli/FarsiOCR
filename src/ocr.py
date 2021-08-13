@@ -43,8 +43,8 @@ def main():
 
             # Creating a text file to write the output
             outfile = os.path.join(output_dir, "out_" + os.path.splitext(filename)[0] + ".txt")
-            with open(outfile, 'w') as text_file:
-                print(text, file=text_file)
+            with open(outfile, 'w', encoding='utf-8') as text_file:
+                text_file.write(text)
 
             # Evaluate the result based on Levenshtein distance
             # evaluate_result(text)
