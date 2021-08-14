@@ -15,10 +15,17 @@ You can either install [Tesseract](https://github.com/tesseract-ocr/tesseract/wi
 ```shell script
 mv fas.traineddata /usr/local/share/tessdata
 ```
-3. Install dependencies via `requirements.txt`
+
+3. Install poppler (PDF rendering library) for your OS
+Ubuntu-based Linux: ```apt-get install -y poppler-utils```,
+macOS: ```brew install poppler```,
+Windows: download [poppler file for windows](https://blog.alivate.com.au/poppler-windows/) and install it
+
+4. Install dependencies via `requirements.txt`
 ```shell script
 pip install -r requirements.txt
 ```
+
 ## Installation via Docker
 ```shell script
 docker build -t farsiocr .
