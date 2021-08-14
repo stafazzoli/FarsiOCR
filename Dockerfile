@@ -9,12 +9,12 @@ RUN apt-get install tesseract-ocr-fas
 
 WORKDIR /app
 
+# Install app dependencies
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
+
 # Bundle app source
 COPY src ./src
-
-# Install app dependencies
-COPY requirements.txt ./requirements.txt
-RUN pip3 install -r requirements.txt
 
 # Set the locale to C.UTF-8 for Python 3
 ENV LANG C.UTF-8
