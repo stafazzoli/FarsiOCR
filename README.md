@@ -21,7 +21,6 @@ Ubuntu-based Linux: ```apt-get install -y poppler-utils```,
 macOS: ```brew install poppler```,
 Windows: download [poppler file for windows](https://blog.alivate.com.au/poppler-windows/) and install it
 
-
 4. Install dependencies via `requirements.txt`
 ```shell script
 pip install -r requirements.txt
