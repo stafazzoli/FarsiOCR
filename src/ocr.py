@@ -42,12 +42,16 @@ def main():
             text = os.linesep.join([s for s in text.splitlines() if s.strip()])
 
             # Creating a text file to write the output
-            outfile = os.path.join(output_dir, "out_" + os.path.splitext(filename)[0] + ".txt")
-            with open(outfile, 'w', encoding='utf-8') as text_file:
-                text_file.write(text)
+            write_output(filename, text)
 
             # Evaluate the result based on Levenshtein distance
             # evaluate_result(text)
+
+
+def write_output(filename, text):
+    outfile = os.path.join(output_dir, f'out_{os.path.splitext(filename)[0]}.txt')
+    with open(outfile, 'w', encoding='utf-8') as text_file:
+        text_file.write(text)
 
 
 def evaluate_result(text):
