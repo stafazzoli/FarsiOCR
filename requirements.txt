@@ -2,6 +2,6 @@ docx2txt==0.8
 numpy===1.19.3
 opencv-python===4.5.3.56
 pdf2image==1.11.0
-Pillow==8.2.0
+Pillow==8.3.2
 pytesseract==0.3.1
 python-Levenshtein==0.12.0
