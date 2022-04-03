@@ -1,13 +1,13 @@
 # FarsiOCR
 An OCR application for Farsi/ Persian documents.
-This OCR application uses open source text recognition [Tesseract 4.1](https://github.com/tesseract-ocr/tesseract/wiki) and Python3.
+This OCR application uses open source text recognition [Tesseract 5.1.0](https://github.com/tesseract-ocr/tessdoc) and Python3.
 
 Preprocessing is applied to each image before using `tesseract`. This is done to improve the performance of tesseract and also fix the rotation angle of the image (if needed). After converting the image to a `txt` file, the quality of ocr can be measured using the Levenshtein distance metric (By putting original.docx of the intended image into Data directory). 
 
 ## Installation
 1. Install Tesseract
 
-You can either install [Tesseract](https://github.com/tesseract-ocr/tesseract/wiki) via pre-built binary package or build it from source.
+You can either install [Tesseract](https://github.com/tesseract-ocr/tessdoc) via pre-built binary package or build it from source.
 
 2. Install farsi language data for tesseract
 
