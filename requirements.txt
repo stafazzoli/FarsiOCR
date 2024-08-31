@@ -1,6 +1,6 @@
 docx2txt==0.8
 numpy==1.22.3
-opencv-python==4.5.5.64
+opencv-python==4.8.1.78
 packaging==21.3
 pdf2image==1.16.0
 Pillow==10.3.0
