@@ -10,7 +10,7 @@ from PIL import Image
 def process_image(img_path):
     temp_filename = resize_image(img_path)
     img = remove_noise_and_smooth(temp_filename)
-    img = fix_rotation(img)
+    # img = fix_rotation(img)
     # img = remove_lines(img)
 
     return img
@@ -22,7 +22,7 @@ def resize_image(img_path):
         length_x, width_y = img.size
         factor = max(1, int(1800 / length_x))  # 1800 for tesserect
         size = factor * length_x, factor * width_y
-        im_resized = img.resize(size, Image.ANTIALIAS)
+        im_resized = img.resize(size, Image.Resampling.LANCZOS)
 
         import tempfile
         temp_file = tempfile.NamedTemporaryFile(delete=False, suffix=".TIFF")
